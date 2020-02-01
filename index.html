@@ -20,14 +20,16 @@
         </ul>
         <ul>
           <li>
+            <a href="enter.html">
             <button type="button">Войти</button>
+            </a>  
           </li>
         </ul>
       </nav>
     </header>
     <main>
 
-     <h1>Барбершоп "Бородинский"</h1>
+     <h1 class="visually-hidden">Барбершоп "Бородинский"</h1 >
 
      <section>
        <h2>Приемущества</h2>
@@ -76,26 +78,43 @@
      <section>
        <h2>Контактная информация</h2>
        <p>
-         БАРБЕРШОП "БОРОДИНСКИЙ"<br>
-         АДРЕС:Г.САНКТ-ПЕТЕРБУРГ<br>
-         ТЕЛЕФОН:+7(812)666-02-66<br>
+         Барбершоп "Бородинский"<br>
+         Адрес:Г.Санкт-Петербург<br>
+         Телефон:+7(812)666-02-66<br>
       </p>
       <p>
-        ВРЕМЯ РАБОТЫ:<br>
+        Время работы:<br>
         ПН-ПТ:С 10:00 ДО 22:00<br>
         СБ-ВС:С 10:00 ДО 19:00<br>
       </p>
-      <a href="map.html">КАК ПРОЕХАТЬ</a>
-      <a href="contacts.html">КАК ПРОЕХАТЬ</a>
+       <a href="map.html">Как Проехать</a>
      </section>
 
      <section>
       <h2>Записаться</h2>
       <p>
-        УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ<br>
-         ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
+        Укажите желаемую дату и время<br>
+         Для подтверждения борни
       </p>
-      <!--Здесь будет форма-->
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+       <p>
+        <label for="appointment-date">Дата</label> 
+        <input id="appointment-date" type="data" name="date" placeholder="31.01.2020">
+      </p>
+      <p>
+        <label for="appointment-time">Время</label>
+        <input id="appointment-time" type="time" name="time" placeholder="12:00">
+      </p>
+      <p>
+        <label for="appointment-name">Ваше имя</label>      
+        <input id="appointment-name" type="name" name="name" placeholder="Борода">
+      </p>
+      <p>
+        <label for="appointment-phone">Телефон</label>
+       <input id="appointment-phone" type="tel" name="phone" placeholder="+7 123-456-78-90">
+      </p>
+      <button type="submit">Отправить</button>
+      </form>
      </section>
     </main> 
     <footer>
