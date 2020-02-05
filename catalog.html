@@ -3,22 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-    <header>
-      <nav>
-        <a href="index.html">
-        <img src="img/logo.svg" width="111" height="24" 
+  <body class="inner-page">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
+        <img src="img/dec/logo.svg" width="111" height="24" 
          alt="Логотип барбершопа Бородинский">
         </a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="index.html">Информация</a></li>
           <li><a href="index.html">Новости</a></li>
           <li><a href="price.html">Прайс</a></li>
           <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
           <li><a href="index.html">Контакты</a></li>
         </ul>
-        <ul>
+        <ul class="user-navigation">
           <li>
             <a href="enter.html">
             <button type="button">Войти</button>
@@ -27,7 +30,7 @@
         </ul>
       </nav>
     </header> 
-    <main>
+    <main class="container">
      <h1>Средства для ухода</h1>
       <ul>
         <li><a href="index.html">Главная</a></li>
@@ -37,7 +40,8 @@
       <section>
        <h2 class="visually-hidden">Фильт товаров</h2>
        <!--Здесь будет форма-->
-       <h2>Производители:</h2>
+       <fieldset>
+        <legend>Производители</legend> 
        <form action="https://echo.htmlacademy.ru/courses" method="get">
 
        <ul>
@@ -60,7 +64,9 @@
          <input type="checkbox" name="Baxter" checked> American crew
         </li>
       </ul>
-      <h2>Группы товаров:</h2>
+      </fieldset>
+      <fieldset>
+        <legend> Группы товаров:</legend>
       <ul>
         <li>
           <input type="radio" name="Для бритья"> Бритвенные принадлежности
@@ -72,6 +78,7 @@
           <input type="radio" name="Для бритья"> Аксессуары
         </li>
       </ul>
+      </fieldset> 
      <button type="submit">Показать</button>
     </form>
       </section>
